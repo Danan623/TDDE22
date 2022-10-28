@@ -96,7 +96,7 @@ public class FastHashing {
 		// points of line segments easy.
 		long start = System.currentTimeMillis();
 		/**
-		 * @author Daniel
+		 * 
 		 * @param If >= 4 points with same slope exists: Draw a line between the points
 		 *           no need to sort the slopes with this algorithm.
 		 */
@@ -147,7 +147,7 @@ public class FastHashing {
 
 	/**
 	 * 
-	 * @Daniel
+	 * 
 	 * @param comparator class: sort the slopes of random points in 2D space
 	 *                   compared from a fixed point
 	 * @return 1 - if slope to point a > slope to point b. -1 if slope to point a <
