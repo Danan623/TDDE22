@@ -102,7 +102,7 @@ public class Fast {
 
 		long start = System.currentTimeMillis();
 		/**
-		 * @author Daniel&Arvid
+		 * 
 		 * @param If >= 4 points with same slope exists: Draw a line between the points  
 		 */
 		List<Point> slopes = new ArrayList<Point>();
@@ -169,7 +169,7 @@ public class Fast {
 
 	/**
 	 * 
-	 * @author Daniel
+	 * 
 	 * @param comparator class: sort the slopes of random points in 2D space
 	 *                   compared from a fixed point
 	 * @return 1 - if slope to point a > slope to point b. -1 if slope to point a <
