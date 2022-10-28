@@ -6,14 +6,14 @@ import java.util.HashSet;
  * The LongestChain class contains the necessary data to perform breadth first
  * searches in accordance with the laboration, and determine the longest chain.
  *
- * @author Magnus Nielsen, Tommy FÃ¤rnqvist
+ * @author Magnus Nielsen, Tommy FÃƒÂ¤rnqvist
  */
 class LongestChain {
 	private Queue q; // queue used in the BFS
 	private String goalWord; // goal word of the BFS
 	private int wordLength;
 	private final char[] alphabet = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p',
-			'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'å', 'ä', 'ö', 'é' };
+			'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'Ã¥', 'Ã¤', 'Ã¶', 'Ã©' };
 	private int alphabetLength = alphabet.length;
 	private WordRec tmpWr;
 
@@ -116,9 +116,11 @@ class LongestChain {
 	 * @param endWord - the goal word, where we wish for all the paths to end
 	 */
 	public void checkAllStartWords(String endWord) {
-
-		if (WordList.contains(endWord) == null) {// om endword inte finns i ordlista så behöver vi inte fortsätta
-			System.out.println(endWord + ": ingen lösning");
+	/**
+	* If endword does not exist: quit
+	*/
+		if (WordList.contains(endWord) == null) {
+			System.out.println(endWord + ": ingen lÃ¶sning");
 			return;
 		}
 		tmpWr = null; // "clear" prev. adress
@@ -127,7 +129,7 @@ class LongestChain {
 			System.out.println(endWord + ": " + tmpWr.chainLength() + " ord");
 			tmpWr.printChainHelpRev();// END -> START
 		} else {
-			System.out.println(endWord + ": ingen lösning");
+			System.out.println(endWord + ": ingen lÃ¶sning");
 		}
 
 	}
