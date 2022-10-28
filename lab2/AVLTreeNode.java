@@ -101,7 +101,7 @@ public class AVLTreeNode<T extends Comparable<T>> {
 	}
 
 	/**
-	 * @author Daniel 
+	 * 
 	 * @param Re-balance tree if node height: right - left = +(-) 2 
 	 * @return node (address)
 	 * */
